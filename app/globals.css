@@ -1,27 +1,323 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+body{
+  font-optical-sizing: auto;
+  background-color: #FFF;
+}
+
+.container{
+  max-width: 1440px;
+}
+/* navbar kısmı css */
+.hamNav {
+  display: none;
+}
+
+.hamButton {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.hamIcon {
+  width: 30px;
+  height: 30px;
+  fill: black; /* SVG'nin fill rengini değiştiriyoruz */
+}
+
+/* Offcanvas genişliğini ayarlıyoruz */
+.customOffcanvas .offcanvas {
+  width: 250px; /* Offcanvas genişliğini küçülttük */
+}
+
+.customOffcanvas .offcanvas-title {
+  font-size: 1.25rem;
+}
+
+.offcanvasNav {
+  display: flex;
+  flex-direction: column; /* Navbar itemleri alt alta diziyoruz */
+  gap: 10px; /* Itemler arası boşluk */
+}
+
+.offcanvasNav .nav-link {
+  color: black;
+  font-size: 18px;
+}
+
+.desktopNav {
+  display: flex;
+  justify-content: center;
+}
+.allNav {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 80px;
+  background-color:white; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.allNav .nav-link {
+  color: black; 
+  font-size: 18px; 
+  padding: 10px 20px; 
+  transition: all 0.3s ease; 
+}
+
+.allNav .nav-link:hover {
+  color: #0B2F9F; 
+  text-decoration: underline; 
+}
+
+.allNav .nav-item {
+  margin: 0 15px; 
+}
+/* carousel kısmı css */
+.carousel {
+  margin-inline: auto;
+  max-width: 1000px; /* Büyük ekranlar için genişlik */
+  height: auto;
+  margin-top: 25px;
+}
+
+.carouselImg {
+  width: 100%;
+  height: 500px; /* Büyük ekranlar için yükseklik */
+  object-fit: cover; /* Görüntüleri kırpmadan ekranı doldur */
+}
+/* anilar kısmı css */
+.anilarCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.anilarCard {
+  transition: transform 0.3s ease; /* Hover efektinin süresi */
+}
+
+.anilarCard:hover {
+  transform: scale(1.05); /* Sadece kartın büyümesi */
+}
+
+.anilarCard img {
+  width: 100%; /* Resmi kartın genişliğine ayarlamak */
+  height: 250px; /* Tüm resimler için sabit yükseklik */
+  object-fit: cover; /* Resmin kesilmemesi için */
+}
+
+.anilarCard .card {
+  width: 18rem;
+  height: auto; /* Kart yüksekliği içeriğe göre ayarlanacak */
+  transition: transform 0.3s ease;
+}
+
+.anilarCard .card-body {
+  text-align: center; /* Metni ortalamak için */
+}
+.anilarCard button{
+  background-color: #A04747;
+  border: none;
+  transition: 0.4s;
+}
+.anilarCard button:hover{
+  background-color: #D95F59;
+}
+
+/* detay sayfası css */
+.detailPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa; 
+  min-height: 100vh; 
+}
+
+.detailContainer {
+  display: flex; 
+  max-width: 800px; 
+  background-color: #ffffff; /* Beyaz arka plan */
+  border-radius: 10px; /* Köşeleri yuvarlaştır */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  overflow: hidden; /* Taşmayı önle */
+}
+
+.detailImg {
+  width: 40%; /* Resmin genişliği %40 */
+  height: auto; /* Orantılı yükseklik */
+}
+
+.detailTexts {
+  padding: 20px; /* İçerik alanına dolgu */
+  width: 60%; /* Yazının genişliği %60 */
+}
+
+.detailTexts h1 {
+  font-size: 1.5rem; /* Başlık boyutu */
+  color: #333333; /* Başlık rengi */
+  margin-bottom: 10px; /* Başlık ile içerik arasında boşluk */
+}
+
+.detailTexts p {
+  font-size: 1rem; /* İçerik boyutu */
+  color: #555555; /* İçerik rengi */
+  line-height: 1.5; /* Satır aralığı */
+}
+
+
+
+.mainText {
+  max-width: 1000px; /* Büyük ekranlar için genişlik */
+  margin-inline: auto;
+  padding: 12px;
+  margin-top: 13px;
+  font-size: 1.2rem; /* Varsayılan yazı boyutu */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  line-height: 1.6; /* Satır aralığı */
+}
+
+.mainText p {
+  margin-bottom: 15px;
+}
+.mapContainer {
+  max-width: 1000px; /* Maksimum genişlik */
+  margin: 20px auto; /* Ortala ve üstte boşluk bırak */
+  padding: 20px; /* İçerik etrafında boşluk */
+  background-color: #f8f9fa; /* Açık arka plan rengi */
+  border-radius: 10px; /* Köşeleri yuvarla */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+.mapTitle {
+  font-size: 1.5rem; /* Başlık boyutu */
+  color: #333; /* Başlık rengi */
+  margin: 20px 0; /* Başlıklar arası boşluk */
+  text-align: center; /* Ortala */
+
+}
+
+.mapIframe {
+  width: 100%; /* İframe genişliği */
+  height: 500px; /* İframe yüksekliği */
+  margin: 10px 0; /* Üst ve alt boşluk */
+}
+.map{
+  margin-top: 50px;
+}
+
+.footer{
+  height: 20px;
+  font-size: smaller;
+  text-align: center;
+  padding: 15px;
+}
+
+
+/* Responsive Carousel */
+@media (max-width: 768px) {
+  .carousel {
+    max-width: 100%; /* Mobilde ekran genişliğine sığdır */
+    margin-top: 10px;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .carouselImg {
+    height: 300px; /* Mobil cihazlar için yükseklik */
+    object-fit: cover; /* Görüntüleri sığdır */
   }
+  .detailCard {
+    flex-direction: column; /* Mobilde dik kart yapısı */
+  }
+
+  .detailImg {
+      width: 100%; /* Mobilde görselin genişliği */
+      height: auto; /* Yüksekliği otomatik ayarla */
+  }
+
+  .detailTexts {
+      width: 100%; /* Mobilde yazının genişliği */
+  }.detailContainer {
+      flex-direction: column; /* Mobilde dik kart yapısı */
+  }
+
+  .detailImg {
+      width: 100%; /* Mobilde görselin genişliği */
+      height: auto; /* Yüksekliği otomatik ayarla */
+  }
+
+  .detailTexts {
+      width: 100%; /* Mobilde yazının genişliği */
+  }
+  .allNav .nav-link {
+    display: none;
+  }
+
+  .hamNav {
+    display: block;
 }
+
+.desktopNav {
+    display: none;
+}
+.mapTitle {
+  font-size: 1.2rem;
+  margin-top: 100px; /* Mobilde başlık boyutu */
+}
+
+.mapIframe {
+  height: 300px; /* Mobilde iframe yüksekliği */
+}
+
+}
+
+@media (max-width: 480px) {
+  .carouselImg {
+    height: 250px; /* Daha küçük cihazlar için yükseklik */
+  }
+  .hamNav {
+    display: block;
+}
+
+.desktopNav {
+    display: none;
+}
+.mainText {
+  font-size: 0.9rem; /* Daha küçük ekranlarda yazı boyutunu daha da küçült */
+  line-height: 1.4;  /* Satır aralığını daralt */
+  padding: 8px;      /* İç dolgu biraz daha azalt */
+}
+.mapTitle {
+  font-size: 1rem;
+  margin-top: 100px; /* Daha küçük ekranlar için başlık boyutu */
+}
+
+.mapIframe {
+  height: 200px; /* Daha küçük ekranlar için iframe yüksekliği */
+}
+}
+
+

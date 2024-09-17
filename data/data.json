@@ -1,0 +1,135 @@
+[
+    {
+        "id":1,
+        "title":"İlk Fotoğrafımız",
+        "description":"Beraber çekildiğimiz ilk fotoğraf buydu sevgilim, el ele tutuşmak ilk defa anlamlı olmuştu...",
+        "img":"/elEle.jpg"
+    },
+    {
+        "id":2,
+        "title":"Bizim Şarkımız",
+        "description":"Koydum sevinçlerimi önüme Baktım hepsi SENSİN",
+        "img":"/celenk.jpg"
+    },
+    {
+        "id":3,
+        "title":"En Güzel Manzara",
+        "description":"Benim manzaram ne güneş ne de deniz benim tek manzaram sensin Gökyüzüm",
+        "img":"/denizdeDigerFoto.jpg"
+    },
+    {
+        "id":4,
+        "title":"İki Küçük Çocuk Gibiyiz...",
+        "description":"Gerektiğinde iki genç aşık, gerektiğinde iki olgun insan, gerektiğinde de iki çocuk olduk ",
+        "img":"/blurluFotograf.jpg"
+    },
+    {
+        "id":5,
+        "title":"İlk Tatilimiz",
+        "description":"Beraber yaptığımız ilk tatil..Her tatilimi seninle yapmak istiyorum sevgilim",
+        "img":"/duzSelfie.jpg"
+    },
+    {
+        "id":6,
+        "title":"Şov :)",
+        "description":"Evde kapı yoktu bende Balkondan girdim ;)",
+        "img":"/sov.jpg"
+    },
+    {
+        "id":7,
+        "title":"Galata Kulesi",
+        "description":"Evlilik sözümüz 🧿🤍",
+        "img":"/galataKulesi.jpg"
+    },
+    {
+        "id":8,
+        "title":"Alaçatı",
+        "description":"",
+        "img":"/tatil.jpg"
+    },
+    {
+        "id":9,
+        "title":"İstanbul",
+        "description":"",
+        "img":"/yataySelfie.jpg"
+    },
+    {
+        "id":10,
+        "title":"Araba Gezileri...",
+        "description":"",
+        "img":"/arabaElEle.jpg"
+    },
+    {
+        "id":11,
+        "title":"İlk Videomuzdan Kesit",
+        "description":"İlk Videomuz 🥹",
+        "img":"/blurluSelfie.jpg"
+    },
+    {
+        "id":12,
+        "title":"SEN BENİM",
+        "description":"",
+        "img":"/aynaGorseli.jpg"
+    },
+    {
+        "id":13,
+        "title":"Uğruna Öleceğim",
+        "description":"",
+        "img":"/yatayArabaSelfie.jpg"
+    },
+    {
+        "id":14,
+        "title":"Ömrümün Sonuna Kadar Beraber Yol Yürümek İstediğim",
+        "description":"",
+        "img":"/yurume.jpg"
+    },
+    {
+        "id":15,
+        "title":"Gözlerinde Kaybolduğum",
+        "description":"",
+        "img":"/raki.jpg"
+    },
+    {
+        "id":16,
+        "title":"Bir Gülümsemesine Dünyayı Yakacağım",
+        "description":"",
+        "img":"/duzArabaSelfie.jpg"
+    },
+    {
+        "id":17,
+        "title":"Sevgilim",
+        "description":"",
+        "img":"/denizdeFoto.jpg"
+    },
+    {
+        "id":18,
+        "title":"Aşkım",
+        "description":"",
+        "img":"/denizdeSelfie.jpg"
+    },
+    {
+        "id":19,
+        "title":"Yaşama Sebebimsin",
+        "description":"",
+        "img":"/arabadaSelfie.jpg"
+    },
+    {
+        "id":20,
+        "title":"Sana Çok Aşığım",
+        "description":"",
+        "img":"/dikeyKafedeSelfie.jpg"
+    },
+    {
+        "id":21,
+        "title":"Alyoşum",
+        "description":"",
+        "img":"/yatayTatil.jpg"
+    },
+    {
+        "id":22,
+        "title":"İyi geldik dünyaya sonra birbirimizin dünyasına ❤",
+        "description":"",
+        "img":"/dogumGunu.jpg"
+    }
+
+]
